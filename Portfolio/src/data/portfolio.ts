@@ -35,7 +35,7 @@ export interface Project {
 export const portfolioData = {
   hero: {
     name: "Mahar Ahmad Sarfraz",
-    title: "AI & Full-Stack Developer",
+    title: "Generative AI & Full-Stack Developer",
     subtitle:
       "Building practical AI systems, full-stack applications, and digital products that turn complex ideas into useful experiences.",
   },

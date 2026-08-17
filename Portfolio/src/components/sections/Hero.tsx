@@ -46,7 +46,7 @@ export function Hero() {
               variants={itemVariants} 
               className="inline-flex rounded-full border border-border bg-muted/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-muted-foreground"
             >
-              AI • FULL-STACK
+              GENERATIVE AI • FULL-STACK
             </motion.div>
             
             <motion.div variants={itemVariants} className="space-y-4">

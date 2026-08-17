@@ -94,7 +94,7 @@ export default function ResumePage() {
                   Mahar Ahmad Sarfraz
                 </h1>
                 <p className="text-base sm:text-lg font-medium text-primary">
-                  Agentic AI Developer & Full-Stack Engineer
+                  Generative AI & Full-Stack Developer
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Karachi, Pakistan
