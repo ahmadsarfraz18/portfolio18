@@ -71,9 +71,7 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
               </Link>
               <Link 
-                href="/resume.pdf"
-                target="_blank"
-                rel="noreferrer" 
+                href="/resume"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-border bg-background px-8 text-sm font-medium transition-all duration-500 ease-out hover:scale-[1.02] hover:-translate-y-1 hover:bg-muted hover:shadow-md hover:border-foreground/20 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
               >
                 Resume

@@ -113,6 +113,12 @@ export function Navbar() {
             })}
           </nav>
           <div className="flex items-center ml-2 md:ml-4 md:border-l border-border md:pl-4">
+            <Link
+              href="/resume"
+              className="relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-muted-foreground hover:text-foreground/80"
+            >
+              Resume
+            </Link>
             <ThemeToggle />
           </div>
         </div>
