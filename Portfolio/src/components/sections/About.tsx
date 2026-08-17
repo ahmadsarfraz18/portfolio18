@@ -19,8 +19,8 @@ const itemVariants: Variants = {
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-muted/10 border-t border-border/40">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <section id="about" className="py-16 sm:py-24 bg-muted/10 border-t border-border/40">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           
           {/* LEFT SIDE: Narrative */}

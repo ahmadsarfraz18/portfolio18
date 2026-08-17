@@ -173,7 +173,7 @@ function PersonalPhilosophy() {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="relative mx-auto mt-24 mb-12 max-w-4xl overflow-hidden rounded-[2rem] border border-primary/20 bg-primary/5 p-12 text-center md:p-20"
+      className="relative mx-auto mt-12 sm:mt-24 mb-8 sm:mb-12 max-w-4xl overflow-hidden rounded-[2rem] border border-primary/20 bg-primary/5 p-6 sm:p-12 text-center md:p-20"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.1)_0%,transparent_70%)]" />
       <div className="relative z-10">
@@ -189,11 +189,11 @@ function PersonalPhilosophy() {
 
 export function LearningAndAchievements() {
   return (
-    <section id="journey" className="relative border-t border-border/40 bg-background py-24 overflow-hidden">
+    <section id="journey" className="relative border-t border-border/40 bg-background py-16 sm:py-24 overflow-hidden">
       {/* Background Gradients & Noise */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.03)_0%,transparent_50%)]" />
       
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <div className="mb-20 space-y-6 text-center md:mb-32">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}

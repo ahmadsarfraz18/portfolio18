@@ -18,8 +18,8 @@ export function FlagshipProject() {
   if (!project) return null;
 
   return (
-    <section id="flagship" className="py-24 md:py-32 border-t border-border/40">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <section id="flagship" className="py-16 sm:py-24 md:py-32 border-t border-border/40">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         
         <motion.div 
           className="flex flex-col items-center mb-16 text-center space-y-4"

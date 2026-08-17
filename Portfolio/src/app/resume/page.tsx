@@ -39,37 +39,40 @@ export default function ResumePage() {
     <>
       {/* Top Action Bar - Hidden on Print */}
       <div className="no-print fixed top-16 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto max-w-4xl flex items-center justify-between px-4 md:px-6 h-14">
+        <div className="container mx-auto max-w-4xl flex items-center justify-between px-3 sm:px-4 md:px-6 h-14">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Home
+            <span className="hidden sm:inline">Back to Home</span>
+            <span className="sm:hidden">Back</span>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={handlePrint}
-              className="inline-flex h-9 items-center justify-center gap-2 rounded-full border border-border bg-background px-5 text-sm font-medium transition-all hover:bg-muted hover:border-foreground/20"
+              className="inline-flex h-9 items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-border bg-background px-3 sm:px-5 text-xs sm:text-sm font-medium transition-all hover:bg-muted hover:border-foreground/20"
             >
               <Download className="h-4 w-4" />
-              Download PDF
+              <span className="hidden xs:inline">Download PDF</span>
+              <span className="xs:hidden">PDF</span>
             </button>
             <a
               href="/resume-mahar-sarfaraz.docx"
               download
-              className="inline-flex h-9 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
+              className="inline-flex h-9 items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-primary px-3 sm:px-5 text-xs sm:text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
             >
               <FileText className="h-4 w-4" />
-              Download DOCX
+              <span className="hidden xs:inline">Download DOCX</span>
+              <span className="xs:hidden">DOCX</span>
             </a>
           </div>
         </div>
       </div>
 
       {/* Resume Content */}
-      <section className="pt-32 pb-20 print:pt-0 print:pb-0">
-        <div className="container mx-auto max-w-4xl px-4 md:px-6">
+      <section className="pt-28 sm:pt-32 pb-16 sm:pb-20 print:pt-0 print:pb-0">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 md:px-8">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -77,8 +80,8 @@ export default function ResumePage() {
             className="space-y-10"
           >
             {/* Header */}
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-border flex-shrink-0">
+            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-6">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-border flex-shrink-0">
                 <Image
                   src="/profile.png"
                   alt="Mahar Ahmad Sarfraz"
@@ -86,17 +89,17 @@ export default function ResumePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-2">
-                <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+              <div className="space-y-2 text-center sm:text-left">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground break-words">
                   Mahar Ahmad Sarfraz
                 </h1>
-                <p className="text-lg font-medium text-primary">
+                <p className="text-base sm:text-lg font-medium text-primary">
                   Agentic AI Developer & Full-Stack Engineer
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Karachi, Pakistan
                 </p>
-                <div className="flex flex-wrap gap-3 pt-1">
+                <div className="flex flex-wrap justify-center sm:justify-start gap-3 pt-1">
                   <a
                     href="https://github.com/ahmadsarfraz18"
                     target="_blank"
@@ -124,7 +127,7 @@ export default function ResumePage() {
             </motion.div>
 
             {/* Summary */}
-            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-6">
+            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-4 sm:p-6">
               <SectionTitle>Summary</SectionTitle>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Specialist in building autonomous AI agent workflows, spec-driven architectures, and
@@ -134,7 +137,7 @@ export default function ResumePage() {
             </motion.div>
 
             {/* Skills */}
-            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-6">
+            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-4 sm:p-6">
               <SectionTitle>Skills</SectionTitle>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -148,7 +151,7 @@ export default function ResumePage() {
             </motion.div>
 
             {/* Featured Projects */}
-            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-6">
+            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-4 sm:p-6">
               <SectionTitle>Featured Projects</SectionTitle>
               <div className="space-y-5">
                 <div className="space-y-1">
@@ -185,7 +188,7 @@ export default function ResumePage() {
             </motion.div>
 
             {/* Experience */}
-            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-6">
+            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-4 sm:p-6">
               <SectionTitle>Experience</SectionTitle>
               <div className="space-y-5">
                 <div className="space-y-1">
@@ -217,7 +220,7 @@ export default function ResumePage() {
             </motion.div>
 
             {/* Education */}
-            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-6">
+            <motion.div variants={fadeIn} className="rounded-xl border border-border bg-card p-4 sm:p-6">
               <SectionTitle>Education</SectionTitle>
               <div className="space-y-1">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
