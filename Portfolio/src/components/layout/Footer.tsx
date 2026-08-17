@@ -27,6 +27,9 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             {portfolioData.hero.title}
           </p>
+          <p className="text-xs text-muted-foreground/60">
+            Developed with 💗 by {portfolioData.hero.name}
+          </p>
         </div>
         <div className="flex items-center space-x-6">
           <Link href={portfolioData.socials.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:-translate-y-1">
